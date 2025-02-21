@@ -4,7 +4,6 @@ export const Resultados = ({ resultado, error }) => {
     }
     return <div className="row">
         {resultado.map((element, index) => {
-            console.log(element)
             return <div className="col-3" key={index}>
                 <h3>{element.name.common}</h3>
                 <h5>{element.population}</h5>
