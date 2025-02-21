@@ -1,4 +1,7 @@
-export const Resultados = ({ resultado }) => {
+export const Resultados = ({ resultado, error }) => {
+    if (error) {
+        return  <h2>No se encontro Pais</h2>
+    }
     return <div className="row">
         {resultado.map((element, index) => {
             console.log(element)

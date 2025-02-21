@@ -5,12 +5,13 @@ import { Resultados } from './Components/Resultados';
 
 function App() {
   const [resultado, setresultados] = useState([])
+  const [error,seterror] = useState (false)
  
 
   return (
     <>
-      <Busqueda setresultados= {setresultados}/>
-      <Resultados resultado={resultado}/>
+      <Busqueda seterror={seterror} setresultados= {setresultados}/>
+      <Resultados resultado={resultado} error = {error}/>
     </>
   )
 }
